@@ -8,24 +8,25 @@ namespace OpenFoodFacts.Importer
 {
     internal class FoodConstants
     {
-        public const string Code = "code";
-        public const string Url = "url";
-        public const string Creator = "creator";
-        public const string CreatedT = "created_t";
-        public const string Created = "created_datetime";
-        public const string LastModified = "last_modified_t";
-        public const string LastModifiedT = "last_modified_datetime";
-        public const string ProductName = "product_name";
-        public const string ProductNameAbbr = "abbreviated_product_name";
-        public const string GenericName = "generic_name";
-        public const string Quantity = "quantity";
-        public const string Packaging = "packaging";
-                /*"packaging_tags",
-                "packaging_text",
-                "brands",
-                "brands_tags",
-                "categories",
-                "categories_tags",
+        public const string HeaderCode = "code";
+        public const string HeaderUrl = "url";
+        public const string HeaderCreator = "creator";
+        public const string HeaderCreatedTimestamp = "created_t";
+        public const string HeaderCreated = "created_datetime";
+        public const string HeaderLastModifiedTimestamp = "last_modified_t";
+        public const string HeaderLastModified = "last_modified_datetime";
+        public const string HeaderProductName = "product_name";
+        public const string HeaderProductNameAbbr = "abbreviated_product_name";
+        public const string HeaderGenericName = "generic_name";
+        public const string HeaderQuantity = "quantity";
+        public const string HeaderPackaging = "packaging";
+        public const string HeaderPackagingTags = "packaging_tags";
+        public const string HeaderPackagingText = "packaging_text";
+        public const string HeaderBrands = "brands";
+        public const string HeaderBrandTags = "brands_tags";
+        public const string HeaderCategories = "categories";
+        public const string HeaderCategoryTags = "categories_tags";
+        /*
                 "categories_en",
                 "origins",
                 "origins_tags",

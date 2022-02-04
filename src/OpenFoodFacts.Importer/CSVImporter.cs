@@ -190,14 +190,19 @@ namespace OpenFoodFacts.Importer
             {
                 switch (version.Headings[fieldIndex])
                 {
-                    case FoodConstants.Code:
+                    case FoodConstants.HeaderCode:
                         foodRecord.Code = fieldValue; break;
-                    case FoodConstants.CreatedT:
+                    case FoodConstants.HeaderCreatedTimestamp:
                         foodRecord.CreatedUnix = Int32.Parse(fieldValue); break;
-
+                    case FoodConstants.HeaderProductName:
+                        foodRecord.ProductName = fieldValue; break;
+                    case FoodConstants.HeaderProductNameAbbr:
+                        foodRecord.ProductNameAbbreviated = fieldValue; break;
                     default:
-                        continue;   // Ignore fields not interested in
+                        break;   // Ignore fields not interested in
                 }
+
+                fieldIndex++;
             }
 
             return foodRecord;
