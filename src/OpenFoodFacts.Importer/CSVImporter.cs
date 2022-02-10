@@ -34,8 +34,24 @@ namespace OpenFoodFacts.Importer
         {
             if (unprocessed != null && unprocessed.Length > 0)
             {
-                //TODO: Throw proper exception
-                throw new Exception();
+                // Is data left over? Does it end with a new line? if not, append one and try and process it
+                if (unprocessed[unprocessed.Length-1] != Terminator)
+                {
+                    var finalRecords = ProcessData(new char[] { Terminator });
+
+                    if (finalRecords == null || finalRecords.Length == 0)
+                    {
+                        // Could not process final piece of data, report error
+                        //TODO: Throw appropriate exception
+                        throw new Exception();
+                    }
+                }
+                else
+                {
+                    // Could not process final piece of data, report error
+                    //TODO: Throw appropriate exception
+                    throw new Exception();
+                }
             }
 
             base.OnImportFinished();
@@ -58,7 +74,7 @@ namespace OpenFoodFacts.Importer
                     records.Add(food);
                 }
 
-            } while (position < data.Length - 1);
+            } while (position < combined.Length - 1);
 
             return records.ToArray();
         }
@@ -158,6 +174,9 @@ namespace OpenFoodFacts.Importer
 
             // copy current data into array
             current.CopyTo(combined, previous.Length);
+
+            // Clear previous unprocessed data
+            unprocessed = Array.Empty<char>();
 
             return combined;
         }

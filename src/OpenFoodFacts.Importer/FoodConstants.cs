@@ -84,38 +84,38 @@ namespace OpenFoodFacts.Importer
         public const string HeaderImageURLSmall = "image_small_url";
         public const string HeaderIngredientsImageURL = "image_ingredients_url";
         public const string HeaderIngredientsImageURLSmall = "image_ingredients_small_url";
-
-                "image_nutrition_url",
-                "image_nutrition_small_url",
-                "energy-kj_100g",
-                "energy-kcal_100g",
-                "energy_100g",
-                "energy-from-fat_100g",
-                "fat_100g",
-                "saturated-fat_100g",
-                "-butyric-acid_100g",
-                "-caproic-acid_100g",
-                "-caprylic-acid_100g",
-                "-capric-acid_100g",
-                "-lauric-acid_100g",
-                "-myristic-acid_100g",
-                "-palmitic-acid_100g",
-                "-stearic-acid_100g",
-                "-arachidic-acid_100g",
-                "-behenic-acid_100g",
-                "-lignoceric-acid_100g",
-                "-cerotic-acid_100g",
-                "-montanic-acid_100g",
-                "-melissic-acid_100g",
-                "monounsaturated-fat_100g",
-                "polyunsaturated-fat_100g",
-                "omega-3-fat_100g",
-                "-alpha-linolenic-acid_100g",
-                "-eicosapentaenoic-acid_100g",
-                "-docosahexaenoic-acid_100g",
-                "omega-6-fat_100g",
-                "-linoleic-acid_100g",
-                "-arachidonic-acid_100g",
+        public const string HeaderNutritionImageURL = "image_nutrition_url";
+        public const string HeaderNutritionImageURLSmall = "image_nutrition_small_url";
+        public const string HeaderEnergyKJPer100G = "energy-kj_100g";
+        public const string HeaderEnergyKCalPer100G = "energy-kcal_100g";
+        public const string HeaderEnergyPer100G = "energy_100g";
+        public const string HeaderEnergyFromFatPer100G = "energy-from-fat_100g";
+        public const string HeaderFatPer100G = "fat_100g";
+        public const string HeaderSaturatedFatPer100G = "saturated-fat_100g";
+        public const string HeaderButyricAcidPer100G = "-butyric-acid_100g";
+        public const string HeaderCaproicAcidPer100G = "-caproic-acid_100g";
+        public const string HeaderCaprylicAcidPer100G = "-caprylic-acid_100g";
+        public const string HeaderCapricAcidPer100G = "-capric-acid_100g";
+        public const string HeaderLauricAcidPer100G = "-lauric-acid_100g";
+        public const string HeaderMyristicAcidPer100G = "-myristic-acid_100g";
+        public const string HeaderPalmiticAcidPer100G = "-palmitic-acid_100g";
+        public const string HeaderStearicAcidPer100G = "-stearic-acid_100g";
+        public const string HeaderArachidicAcidPer100G = "-arachidic-acid_100g";
+        public const string HeaderBehenicAcidPer100G = "-behenic-acid_100g";
+        public const string HeaderLignocericAcidPer100G = "-lignoceric-acid_100g";
+        public const string HeaderCeroticAcidPer100G = "-cerotic-acid_100g";
+        public const string HeaderMontanicAcidPer100G = "-montanic-acid_100g";
+        public const string HeaderMelissicAcidPer100G = "-melissic-acid_100g";
+        public const string HeaderMonosaturatedFatPer100G = "monounsaturated-fat_100g";
+        public const string HeaderPolyunsaturatedFatPer100G = "polyunsaturated-fat_100g";
+        public const string HeaderOmega3FatPer100G = "omega-3-fat_100g";
+        public const string HeaderAlpaLinolenicAcidPer100G = "-alpha-linolenic-acid_100g";
+        public const string HeaderEicosapentaenoicAcidPer100G = "-eicosapentaenoic-acid_100g";
+        public const string HeaderDocosahexaenoicAcidPer100G = "-docosahexaenoic-acid_100g";
+        public const string HeaderOmega6FatPer100G = "omega-6-fat_100g";
+        public const string HeaderLinoleicAcidPer100G = "-linoleic-acid_100g";
+        public const string HeaderArachidonicAcidPer100G = "-arachidonic-acid_100g";
+        /*
                 "-gamma-linolenic-acid_100g",
                 "-dihomo-gamma-linolenic-acid_100g",
                 "omega-9-fat_100g",
@@ -139,28 +139,30 @@ namespace OpenFoodFacts.Importer
                 "polyols_100g",
                 "fiber_100g",
                 "soluble-fiber_100g",
-                "insoluble-fiber_100g",
-                "proteins_100g",
-                "casein_100g",
-                "serum-proteins_100g",
-                "nucleotides_100g",
-                "salt_100g",
-                "sodium_100g",
-                "alcohol_100g",
-                "vitamin-a_100g",
-                "beta-carotene_100g",
-                "vitamin-d_100g",
-                "vitamin-e_100g",
-                "vitamin-k_100g",
-                "vitamin-c_100g",
-                "vitamin-b1_100g",
-                "vitamin-b2_100g",
-                "vitamin-pp_100g",
-                "vitamin-b6_100g",
-                "vitamin-b9_100g",
-                "folates_100g",
-                "vitamin-b12_100g",
-                "biotin_100g",
+                "insoluble-fiber_100g",*/
+
+        public const string HeaderProteinsPer100G = "proteins_100g";
+        public const string HeaderCaseinPer100G = "casein_100g";
+        public const string HeaderSerumProteinsPer100G = "serum-proteins_100g";
+        public const string HeaderNucleotidesPer100G = "nucleotides_100g";
+        public const string HeaderSaltPer100G = "salt_100g";
+        public const string HeaderSodiumPer100G = "sodium_100g";
+        public const string HeaderAlcoholPer100G = "alcohol_100g";
+        public const string HeaderVitaminAPer100G = "vitamin-a_100g";
+        public const string HeaderBetaCarotenePer100G = "beta-carotene_100g";
+        public const string HeaderVitaminDPer100G = "vitamin-d_100g";
+        public const string HeaderVitaminEPer100G = "vitamin-e_100g";
+        public const string HeaderVitaminKPer100G = "vitamin-k_100g";
+        public const string HeaderVitaminCPer100G = "vitamin-c_100g";
+        public const string HeaderVitaminB1Per100G = "vitamin-b1_100g";
+        public const string HeaderVitaminB2Per100G = "vitamin-b2_100g";
+        public const string HeaderVitaminPPPer100G = "vitamin-pp_100g";
+        public const string HeaderVitaminB6Per100G = "vitamin-b6_100g";
+        public const string HeaderVitaminB9Per100G = "vitamin-b9_100g";
+        public const string HeaderFolatesPer100G = "folates_100g";
+        public const string HeaderVitaminB12Per100G = "vitamin-b12_100g";
+        public const string HeaderBiotinPer100G = "biotin_100g";
+        /*
                 "pantothenic-acid_100g",
                 "silica_100g",
                 "bicarbonate_100g",
@@ -193,11 +195,11 @@ namespace OpenFoodFacts.Importer
                 "nutrition-score-fr_100g",
                 "nutrition-score-uk_100g",
                 "glycemic-index_100g",
-                "water-hardness_100g",
-                "choline_100g",
-                "phylloquinone_100g",
-                "beta-glucan_100g",
-                "inositol_100g",
-                "carnitine_100g"*/
+                "water-hardness_100g",*/
+        public const string HeaderCholinePer100G = "choline_100g";
+        public const string HeaderPhylloquinonePer100G = "phylloquinone_100g";
+        public const string HeaderBetaGlucanPer100G = "beta-glucan_100g";
+        public const string HeaderInositolPer100G = "inositol_100g";
+        public const string HeaderCarnitinePer100G = "carnitine_100g";
     }
 }
