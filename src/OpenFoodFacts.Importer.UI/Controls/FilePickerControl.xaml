@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="OpenFoodFacts.Importer.UI.Controls.FilePickerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OpenFoodFacts.Importer.UI.Controls"
+             xmlns:vm="clr-namespace:OpenFoodFacts.Importer.UI.ViewModels"
+             mc:Ignorable="d" 
+             Margin="0,10"
+             d:DesignHeight="450" d:DesignWidth="400">
+    <Control.DataContext>
+        <vm:FileImportViewModel />
+    </Control.DataContext>
+    <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Stretch">
+        <Label Content="File Import" />
+        <Button Content="Browse..."/>
+    </StackPanel>
+</UserControl>
